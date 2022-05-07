@@ -1,0 +1,27 @@
+.wrapper-section-handbook {
+    background-color: rgb(230, 227, 227);
+
+    .section-handbook {
+        background: rgb(230, 227, 227);
+        margin-bottom: 0 !important;
+    }
+
+    .slick-slide {
+        div {
+            div {
+                display: flex !important;
+
+
+            }
+        }
+    }
+
+    img {
+        width: 50% !important;
+        margin-right: 10px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
