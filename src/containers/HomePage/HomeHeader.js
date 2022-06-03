@@ -53,82 +53,86 @@ class HomeHeader extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="home-header-banner">
-                    <div className="home-content-img">
-                        <div className="title1"><FormattedMessage id="header-banner.title1" /></div>
-                        <div className="title2"><FormattedMessage id="header-banner.title2" /></div>
-                        <div className="search">
-                            <i className="fas fa-search"></i>
-                            <input type="text" placeholder="Tìm lý do khám" />
-                        </div>
-                        <div className="options">
-                            <div className="option-items">
-                                <div className="option-img">
-                                    <div className="option-content-img option1"></div>
-                                </div>
-                                <h4 className="option-title">
-                                    <FormattedMessage id="header-banner.options.option1" />
-                                </h4>
+                {
+                    this.props.isShowBanner == true &&
+                    <div className="home-header-banner">
+                        <div className="home-content-img">
+                            <div className="title1"><FormattedMessage id="header-banner.title1" /></div>
+                            <div className="title2"><FormattedMessage id="header-banner.title2" /></div>
+                            <div className="search">
+                                <i className="fas fa-search"></i>
+                                <input type="text" placeholder="Tìm lý do khám" />
                             </div>
-                            <div className="option-items">
-                                <div className="option-img">
-                                    <div className="option-content-img option2"></div>
+                            <div className="options">
+                                <div className="option-items">
+                                    <div className="option-img">
+                                        <div className="option-content-img option1"></div>
+                                    </div>
+                                    <h4 className="option-title">
+                                        <FormattedMessage id="header-banner.options.option1" />
+                                    </h4>
                                 </div>
-                                <h4 className="option-title">
-                                    <FormattedMessage id="header-banner.options.option2" />
-                                </h4>
-                            </div>
-                            <div className="option-items">
-                                <div className="option-img">
-                                    <div className="option-content-img option3"></div>
+                                <div className="option-items">
+                                    <div className="option-img">
+                                        <div className="option-content-img option2"></div>
+                                    </div>
+                                    <h4 className="option-title">
+                                        <FormattedMessage id="header-banner.options.option2" />
+                                    </h4>
                                 </div>
-                                <h4 className="option-title">
-                                    <FormattedMessage id="header-banner.options.option3" />
-                                </h4>
-                            </div>
-                            <div className="option-items">
-                                <div className="option-img">
-                                    <div className="option-content-img option4"></div>
+                                <div className="option-items">
+                                    <div className="option-img">
+                                        <div className="option-content-img option3"></div>
+                                    </div>
+                                    <h4 className="option-title">
+                                        <FormattedMessage id="header-banner.options.option3" />
+                                    </h4>
                                 </div>
-                                <h4 className="option-title">
-                                    <FormattedMessage id="header-banner.options.option4" />
-                                </h4>
-                            </div>
-                            <div className="option-items">
-                                <div className="option-img">
-                                    <div className="option-content-img option5"></div>
+                                <div className="option-items">
+                                    <div className="option-img">
+                                        <div className="option-content-img option4"></div>
+                                    </div>
+                                    <h4 className="option-title">
+                                        <FormattedMessage id="header-banner.options.option4" />
+                                    </h4>
                                 </div>
-                                <h4 className="option-title">
-                                    <FormattedMessage id="header-banner.options.option5" />
-                                </h4>
-                            </div>
-                            <div className="option-items">
-                                <div className="option-img">
-                                    <div className="option-content-img option6"></div>
+                                <div className="option-items">
+                                    <div className="option-img">
+                                        <div className="option-content-img option5"></div>
+                                    </div>
+                                    <h4 className="option-title">
+                                        <FormattedMessage id="header-banner.options.option5" />
+                                    </h4>
                                 </div>
-                                <h4 className="option-title">
-                                    <FormattedMessage id="header-banner.options.option6" />
-                                </h4>
-                            </div>
-                            <div className="option-items">
-                                <div className="option-img">
-                                    <div className="option-content-img option7"></div>
+                                <div className="option-items">
+                                    <div className="option-img">
+                                        <div className="option-content-img option6"></div>
+                                    </div>
+                                    <h4 className="option-title">
+                                        <FormattedMessage id="header-banner.options.option6" />
+                                    </h4>
                                 </div>
-                                <h4 className="option-title">
-                                    <FormattedMessage id="header-banner.options.option7" />
-                                </h4>
-                            </div>
-                            <div className="option-items">
-                                <div className="option-img">
-                                    <div className="option-content-img option8"></div>
+                                <div className="option-items">
+                                    <div className="option-img">
+                                        <div className="option-content-img option7"></div>
+                                    </div>
+                                    <h4 className="option-title">
+                                        <FormattedMessage id="header-banner.options.option7" />
+                                    </h4>
                                 </div>
-                                <h4 className="option-title">
-                                    <FormattedMessage id="header-banner.options.option8" />
-                                </h4>
+                                <div className="option-items">
+                                    <div className="option-img">
+                                        <div className="option-content-img option8"></div>
+                                    </div>
+                                    <h4 className="option-title">
+                                        <FormattedMessage id="header-banner.options.option8" />
+                                    </h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                }
+
             </React.Fragment >
         );
     }

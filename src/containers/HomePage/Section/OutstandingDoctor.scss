@@ -4,6 +4,10 @@
     .section-outstanding-doctor {
         background: white;
 
+        .section-customize {
+            cursor: pointer;
+        }
+
         .slick-slide {
 
             div {
@@ -23,7 +27,7 @@
             border-radius: 50%;
             width: 50% !important;
             margin: 10px auto;
-            height: 50% !important;
+            height: 150px !important;
         }
     }
 }

@@ -14,7 +14,7 @@ class HomePage extends Component {
     render() {
 
         const settings = {
-            infinite: true,
+            infinite: false,
             slidesToShow: 4,
             slidesToScroll: 4
         };
@@ -22,12 +22,12 @@ class HomePage extends Component {
 
         return (
             <div>
-                <HomeHeader settings={settings} />
+                <HomeHeader isShowBanner={true} />
                 <Specialty settings={settings} />
                 <MedicalFacility settings={settings} />
                 <OutstandingDoctor settings={settings} />
                 <HandBook />
-                <About />
+                {/* <About /> */}
                 <HomeFooter />
             </div>
         );

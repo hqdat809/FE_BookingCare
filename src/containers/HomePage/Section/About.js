@@ -20,7 +20,7 @@ class About extends Component {
                     <h3 className='header-section'>Truyền thông nói gì về website đặt lịch khám bệnh</h3>
                     <div className='section-about-content'>
                         <div className='about-content-left'>
-                            <iframe width="570" height="322" src="https://www.youtube.com/embed/FyDQljKtWnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            {/* <iframe width="570" height="322" src="https://www.youtube.com/embed/FyDQljKtWnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                         </div>
                         <div className='about-content-right'>
                             <p>Content bên này để viết nội dung...</p>
