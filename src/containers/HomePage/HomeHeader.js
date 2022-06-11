@@ -4,6 +4,7 @@ import './HomeHeader.scss'
 import { FormattedMessage } from "react-intl"
 import { LANGUAGES } from '../../utils/constant'
 import { changeLanguageApp } from '../../store/actions'
+import {withRouter} from 'react-router'
 
 class HomeHeader extends Component {
 
@@ -12,6 +13,12 @@ class HomeHeader extends Component {
         // hàm mapDispatchToProps giúp chuyển các hàm bên trong nó tới props, 
         // nên ta sử dụng this.props ở đây
         this.props.changeLanguageAppRedux(language)
+    }
+
+    loadToHomePage = () => {
+        if (this.props.history) {
+            this.props.history.push('/home')
+        }   
     }
 
     render() {
@@ -23,7 +30,10 @@ class HomeHeader extends Component {
                     <div className='home-header-content'>
                         <div className='left-content'>
                             <i class="fas fa-bars"></i>
-                            <div className='header-logo'></div>
+                            <div 
+                            className='header-logo'
+                            onClick={() => this.loadToHomePage()}
+                            ></div>
                         </div>
                         <div className='center-content'>
                             <div className='child-content'>
@@ -152,4 +162,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(HomeHeader));

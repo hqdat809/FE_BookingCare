@@ -38,7 +38,11 @@
             "manage-specialty": "Manage Specialty",
             "handbook": "Hand Book",
             "manage-handbook": "Manage Hand Book"
+        },
+        "doctor": {
+            "manage-schedule": "Manage Doctor's Schedule"
         }
+        
     },
     "manage-user": {
         "add": "ADD NEW USER",
@@ -53,5 +57,9 @@
         "role": "Role",
         "addUser": "Add user",
         "gender": "Gender"
+    },
+
+    "manage-schedule": {
+        "title": "Manage doctor's examination plan"
     }
 }

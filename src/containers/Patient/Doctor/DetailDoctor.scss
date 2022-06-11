@@ -1,5 +1,13 @@
 .detail-doctor-container {
 
+    strong {
+        font-size: 18px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
 
     .introduce-doctor {
         margin-top: 100px;
@@ -25,5 +33,7 @@
 
     .content-detail-doctor {
         padding: 50px 100px;
+        border: 2px solid rgb(175, 175, 175);
+        background-color: rgb(227, 227, 227);
     }
 }
